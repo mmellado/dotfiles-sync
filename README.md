@@ -10,6 +10,18 @@ To quote the blog post and HN thread, using particular flow to backup your dotfi
 
 This package does nothing more than follow the setup described above, acting as a Git proxy that allows you to get started with zero configuration.
 
+## Installation
+
+```
+$ npm install -g dotfiles-sync
+```
+
+or
+
+```
+$ yarn global add dotfiles-sync
+```
+
 ## Usage
 
 ### First time
