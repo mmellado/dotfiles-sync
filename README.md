@@ -76,6 +76,10 @@ dotfiles add .vimrc
 
 Nicola posted a shell version of this in his blog post. This is simply a rewrite using Node.
 
+## Known issues
+
+Git interactive commands don't work too well. This is because javascript is executing them so the interactivity becomes unresponsive. This version is my initial prototype so I will continue looking into how to fix this.
+
 ## Special Thanks
 
 To [Nicola Paolucci](https://github.com/durdn) for an amazingly well written blog post and to [StreakyCobra](https://news.ycombinator.com/user?id=StreakyCobra) for the original idea
