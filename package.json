@@ -1,7 +1,8 @@
 {
   "name": "dotfiles-sync",
   "version": "0.0.1",
-  "description": "CLI tool to sync your dotfiles based on https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/",
+  "description":
+    "CLI tool to sync your dotfiles based on https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/",
   "main": "bin/index.js",
   "bin": {
     "dotfiles": "./bin/index.js"
@@ -9,10 +10,21 @@
   "keywords": [
     "dotfiles",
     "git",
+    "github",
     "sync",
-    "git-bare"
+    "git-bare",
+    "home",
+    "config",
+    "cli",
+    "system tools",
+    "filesystem"
   ],
-  "author": "Marcos Mellado <marcos@mellados.com>",
+  "author": "Marcos Mellado <marcos@mellados.com> (https://mellados.com)",
+  "homepage": "https://github.com/mmellado/dotfiles-sync",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmellado/dotfiles-sync.git"
+  },
   "license": "MIT",
   "dependencies": {
     "argparse": "^1.0.10",
@@ -24,8 +36,5 @@
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
