@@ -12,13 +12,13 @@ This package does nothing more than follow the setup described above, acting as 
 
 ## Installation
 
-```
+```bash
 $ npm install -g dotfiles-sync
 ```
 
 or
 
-```
+```bash
 $ yarn global add dotfiles-sync
 ```
 
@@ -28,13 +28,13 @@ $ yarn global add dotfiles-sync
 
 If you have never used the flow described above, you'll have to start by creating the bare repository for your dotfiles.
 
-```
+```bash
 $ dotfiles setup
 ```
 
 If you wish to push this repository to a remote location in GitHub or Bitbucket, you can pass the repository and it will be automatically linked for you.
 
-```
+```bash
 $ dotfiles setup --repository=git@github.com:[your-user]/dotfiles.git
 ```
 
@@ -47,7 +47,7 @@ Running the `setup` command will take care of the following:
 
 Once the repository is created, dotfiles can be used as a proxy for the git commands addressing your dotfiles
 
-```
+```bash
 dotfiles commit -am "Add gitignore" && dotfiles push origin master
 ```
 
@@ -55,7 +55,7 @@ dotfiles commit -am "Add gitignore" && dotfiles push origin master
 
 If you've already built a backup and stored it in a remote git repository, this tool can help you bring it into a new machine.
 
-```
+```bash
 dotfiles sync git@github.com:[your-user]/dotfiles.git
 ```
 
@@ -68,7 +68,7 @@ This will take care of the following actions
 
 At this point, you can continue adding new stuff into your dotfiles repository by using the `dotfiles` command
 
-```
+```bash
 dotfiles add .vimrc
 ```
 
