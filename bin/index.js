@@ -6,6 +6,9 @@ const setup = require('../lib/setup.js');
 const sync = require('../lib/sync.js');
 const git = require('../lib/git.js');
 
+/**
+ * Execute the right function based on the provided arguments
+ */
 switch (args.command) {
   case 'setup':
     setup(args.repository);
