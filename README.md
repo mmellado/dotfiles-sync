@@ -83,7 +83,6 @@ Nicola posted a shell version of this in his blog post. This is simply a rewrite
 
 * dotdirectories: directories like .ssh are hard to work with as if they are in the remote repository, you can't pull them unless you remove them, but removing them leaves you with no public key to pull them, so chicken and egg problem.
 * sync local backup: the backup on conflicting files when syncing was disabled. This is because if dotfolders are included in the repo, the bakcup becomes more complicated (eg: .ssh or .oh-my-zsh). I'll look into re-adding this feature back once I've worked around the issues
-  Git interactive commands don't work too well. This is because javascript is executing them so the interactivity becomes unresponsive. This version is my initial prototype so I will continue looking into how to fix this.
 
 ## Special Thanks
 
