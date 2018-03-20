@@ -3,17 +3,18 @@
 
 const args = require('../lib/args.js');
 const setup = require('../lib/setup.js');
-
-const homeDir = process.env[process.platform == 'win32' ? 'USERPROFILE' : 'HOME'];
-const gitCommand = `/usr/bin/git --git-dir=${homeDir}/.dotfiles/ --work-tree=${homeDir}`;
+const sync = require('../lib/sync.js');
+const git = require('../lib/git.js');
 
 switch (args.command) {
   case 'setup':
-    setup(gitCommand, args.repository);
+    setup(args.repository);
     break;
   case 'sync':
+    sync(args.repository);
     break;
   case 'git':
   default:
+    git(args.options);
     break;
 }
