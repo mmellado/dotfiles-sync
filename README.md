@@ -64,7 +64,10 @@ This will take care of the following actions
 * Checkout the provided repository as a bare repository in `$HOME/.dotfiles`
 * Configure it to not show untracked files
 * Checkout the contents of your repository to your `$HOME` directory
-* If any of the files in the repository already exist in your file system, it will back them up
+
+If any of the files in the repository already exist in your file system, you will be prompted to back them up or remove them. This is because otherwise, the repository checkout would override them. If this is the case, please take the appropriate action and run the command again.
+
+In a future release, this backup will be handled automatically.
 
 At this point, you can continue adding new stuff into your dotfiles repository by using the `dotfiles` command
 
@@ -78,7 +81,9 @@ Nicola posted a shell version of this in his blog post. This is simply a rewrite
 
 ## Known issues
 
-Git interactive commands don't work too well. This is because javascript is executing them so the interactivity becomes unresponsive. This version is my initial prototype so I will continue looking into how to fix this.
+* dotdirectories: directories like .ssh are hard to work with as if they are in the remote repository, you can't pull them unless you remove them, but removing them leaves you with no public key to pull them, so chicken and egg problem.
+* sync local backup: the backup on conflicting files when syncing was disabled. This is because if dotfolders are included in the repo, the bakcup becomes more complicated (eg: .ssh or .oh-my-zsh). I'll look into re-adding this feature back once I've worked around the issues
+  Git interactive commands don't work too well. This is because javascript is executing them so the interactivity becomes unresponsive. This version is my initial prototype so I will continue looking into how to fix this.
 
 ## Special Thanks
 
