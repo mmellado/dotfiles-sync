@@ -1,6 +1,6 @@
 {
   "name": "dotfiles-sync",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description":
     "CLI tool to sync your dotfiles based on https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/",
   "main": "bin/index.js",
