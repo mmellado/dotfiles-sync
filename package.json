@@ -32,11 +32,13 @@
     "colors": "^1.2.1",
     "fs-extra": "^5.0.0",
     "is-git-url": "^1.0.0",
-    "respawn": "^2.5.0",
     "util.promisify": "^1.0.0"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0"
+  },
+  "scripts": {
+    "dot-test": "node bin/index.js"
   }
 }

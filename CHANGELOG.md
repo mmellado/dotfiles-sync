@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.5...master)
+
+* Restored the `sync` backup functionality
+
 ## v0.0.5 [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.4...v0.0.5)
 
 * Fix stdio inheritance for proxified interactive commands
