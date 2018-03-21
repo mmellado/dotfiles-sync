@@ -3,6 +3,7 @@
 ## Unreleased [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.5...master)
 
 * Restored the `sync` backup functionality
+* Standardized console outputs
 
 ## v0.0.5 [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.4...v0.0.5)
 
