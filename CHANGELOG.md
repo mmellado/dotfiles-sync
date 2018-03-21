@@ -4,6 +4,7 @@
 
 * Restored the `sync` backup functionality
 * Standardized console outputs
+* Update all spawn instances to inherit the stdio
 
 ## v0.0.5 [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.4...v0.0.5)
 
