@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.5...master)
+## v0.0.6 [Diff](https://github.com/mmellado/dotfiles-sync/compare/v0.0.5...v0.0.6)
 
 * Restored the `sync` backup functionality
 * Standardized console outputs
