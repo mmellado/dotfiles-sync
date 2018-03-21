@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict';
 
 const args = require('../lib/args.js');
 const setup = require('../lib/setup.js');
